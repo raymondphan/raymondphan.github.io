@@ -18,6 +18,8 @@ let imageContainer = document.getElementById("image-container");
 
         //Get random correct answer
         let randomTag = tagName[Math.floor(Math.random() * tagName.length)];
+        let inPlay = true;
+        let winner = false;
 
         //Create buttons and append to DOM
         tagName.forEach(tag => {
@@ -53,22 +55,31 @@ let imageContainer = document.getElementById("image-container");
         });
 
         //Check if user got correct answer or not
-        buttons.onclick = function (event){
-            console.log(event.target.innerHTML);
-            if (event.target.innerHTML === randomTag) {
-                let winHeading = document.createElement('h1');
-                winHeading.innerHTML = 'YOU WON';
-                winState.appendChild(winHeading); alert(winHeading);
-    
-            } else {
-                let winHeading = document.createElement('h1');
-                winHeading.innerHTML = 'YOU LOST';
-                winState.appendChild(winHeading); alert(winHeading);
-                
+       
+            buttons.onclick = function (event){
+                if(inPlay){
+                    console.log(event.target.innerHTML);
+                    if (event.target.innerHTML === randomTag) {
+                        let winHeading = document.createElement('h1');
+                        winHeading.innerHTML = 'YOU WON';
+                        winState.appendChild(winHeading);
+                        inPlay = false;
+                        winner = true;
+            
+                    } else {
+                        let winHeading = document.createElement('h1');
+                        winHeading.innerHTML = 'YOU LOST';
+                        winState.appendChild(winHeading);
+                        inPlay = false;
+                    }
+                } else if(!inPlay && winner) {
+                    alert('You won! Click play again!')
+                } else {
+                    alert('You lost! Click play again!')
+                }
             }
-        }
+        
     }
-
     //Start Game
     startGame();
 
