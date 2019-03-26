@@ -1,0 +1,18 @@
+body{
+    width: 550px;
+    margin: auto;
+}
+
+h1{
+    border-bottom: 1px solid white;
+    color: aliceblue;
+}
+
+.Square{
+    height: 100px;
+    width: 100px;
+    padding: 30px;
+    font-size: 50pt;
+    text-align: center;
+    font-weight: bold;
+}

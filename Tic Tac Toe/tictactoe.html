@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Margarine" rel="stylesheet">
+<head>
+    <title>Tic Tac Toe Challenge</title>
+
+<style>
+body{
+    width: 550px;
+    margin: auto;
+    background-image: url(https://cdn.geckoandfly.com/wp-content/uploads/2013/06/530-portal-wallpaper.jpg);
+}
+
+h1{
+    color: white;
+    border: 3px solid yellow;
+    text-align: center;
+    font-family: 'Margarine', 'Cursive';
+}
+
+.Square{
+    height: 80px;
+    width: 112px;
+    padding: 30px;
+    font-size: 45px;
+    font-family: 'Margarine', 'Cursive';
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(75, 207, 14);
+    justify-items: center;
+}
+
+#message{
+    font-size: 18pt;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Margarine', 'Cursive';
+}
+
+#restart{
+    font-size: 18pt;
+    color:white;
+    text-decoration-style: dashed;
+}
+
+.button{
+    background-color: red;
+    color: white;
+    height: 30px;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.1s;
+    display: inline-block;
+    font-family: 'Margarine', 'Cursive';
+    margin-left: auto;
+    margin-right: auto;
+}
+.button:hover{opacity: 1}
+
+table{
+    align-items: center;
+    display: flex;
+}
+</style>
+
+</head>
+<body onload='startGame();'>
+    <h1>Play Tic-Tac-Toe!</h1>
+    <div id="message">Message here.</div>
+    <table border="10">
+    <tr>
+        <td class = "Square" id="s1" onClick="nextMove(this)"></td>
+        <td class = "Square" id="s2" onClick="nextMove(this)"></td>
+        <td class = "Square" id="s3" onClick="nextMove(this)"></td>
+    </tr>
+    <tr>
+        <td class = "Square" id="s4" onClick="nextMove(this)"></td>
+        <td class = "Square" id="s5" onClick="nextMove(this)"></td>
+        <td class = "Square" id="s6" onClick="nextMove(this)"></td>
+    </tr>
+    <tr>
+        <td class = "Square" id="s7" onClick="nextMove(this)"></td>
+        <td class = "Square" id="s8" onClick="nextMove(this)"></td>
+        <td class = "Square" id="s9" onClick="nextMove(this)"></td>
+    </tr>
+</table>
+<a href="javascript: startGame();" id="restart"><button class='button'>Try again!</button></a>
+<script src="tictactoe.js"></script>
+</body>
+</html>
