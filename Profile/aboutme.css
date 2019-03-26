@@ -1,0 +1,14 @@
+.navbar{
+    margin: 6px;
+    padding: 25px;
+}
+img{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+h1, p{
+    margin: 15px;
+    font-family: "PT-Sans";
+    font-size: 18px;
+}

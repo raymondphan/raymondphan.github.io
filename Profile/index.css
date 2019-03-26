@@ -1,0 +1,47 @@
+header{
+    border: 5px solid black;
+    padding: 5px;
+    margin: 5px;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    background: yellow;
+}
+
+.masthead{
+    background-image: url('white-seamless-set.jpg');
+    background-size: 1330px 646px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    color: black;
+}
+
+.card-body{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1.videohead{
+    font-style: italic;
+    font-family: "PT-Sans";
+    text-align: center;
+    color: purple;
+}
+
+.card-deck{
+    margin: 10px;
+    padding: 30px;
+    border: 20px solid black;
+}
+
+.navbar{
+    margin: 6px;
+    padding: 25px;
+}
+
+iframe{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
