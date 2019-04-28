@@ -1,0 +1,77 @@
+body{
+    width: 550px;
+    margin: auto;
+    background-image: url(https://cdn.geckoandfly.com/wp-content/uploads/2013/06/530-portal-wallpaper.jpg);
+    font-family: 'Roboto Slab', serif;
+}
+
+h1{
+    color: white;
+    border: 3px solid yellow;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+#gameZone {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+#tictactoe {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#board {
+    height: 380px;
+    margin: 15px;
+    padding: 8px;
+    justify-items: center;
+}
+
+#board div {    
+    float: left;
+    height: 135px;
+    width: 143px;
+    box-sizing: border-box;
+    border: solid 3px black;
+    background-color: rgb(75, 207, 14);
+    margin: 3px;
+    font-size: 45px;
+    text-align: center;
+    line-height: 120px;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+#board div:nth-child(3n + 1) {
+    clear: both;
+}
+
+#clear {
+    clear: both;
+}
+
+#winningStatement {
+    color: white;
+    font-size: 23px;
+}
+
+#restart{
+    background-color: red;
+    color: white;
+    height: 35px;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.1s;
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    margin-left: auto;
+    margin-right: auto;
+}
